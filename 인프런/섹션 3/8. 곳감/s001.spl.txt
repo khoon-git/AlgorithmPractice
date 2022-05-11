@@ -1,0 +1,9 @@
+set verify off
+
+accept sv_empno number prompt "사번 입력 : "
+
+select empno, ename, sal
+from emp
+where empno = &sv_empno;
+
+set verify on
