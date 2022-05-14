@@ -14,4 +14,7 @@ for i in range(2, n+1):
     dy[i] = max + 1
     if dy[i] > res:
         res = dy[i]
-print(res)
+if n == 1:
+    print(1)
+else:
+    print(res)
